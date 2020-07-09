@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hang man game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>HANGMAN GAME</h1>
+    <p>find the hidden Word-Enter Lettre</p>
+    <div class="game-container">
+      <div class="main-container">
+        <svg class="figure-container" height="250" width="250">
+          <!-- rod -->
+          <line x1="60" y1="30" x2="190" y2="30"></line>
+          <line x1="60" y1="30" x2="60" y2="230"></line>
+          <line x1="30" y1="230" x2="90" y2="230"></line>
+          <line x1="190" y1="30" x2="190" y2="70"></line>
+          <!-- head -->
+          <circle cx="190" cy="90" r="20" class="figure-part"></circle>
+          <!-- body -->
+          <line x1="190" y1="110" x2="190" y2="180" class="figure-part"></line>
+          <!-- arm-left -->
+          <line x1="190" y1="125" x2="150" y2="160" class="figure-part"></line>
+          <!-- arm-right -->
+          <line x1="190" y1="125" x2="230" y2="160" class="figure-part"></line>
+          <!-- left leg -->
+          <line x1="190" y1="180" x2="160" y2="220" class="figure-part"></line>
+          <!-- right leg -->
+          <line x1="190" y1="180" x2="220" y2="220" class="figure-part"></line>
+        </svg>
+        <!--  -->
+        <div class="wrong-letter-container">
+          <div class="wrong-letters">
+            <!-- <p>Wrong</p>
+            <span>a</span>,<span>a</span>,<span>a</span>,<span>b</span>,<span
+              >c</span
+            > -->
+          </div>
+        </div>
+      </div>
+      <div class="word" id="word">
+        <!-- <span class="letter"></span>
+        <span class="letter"></span>
+        <span class="letter"></span>
+        <span class="letter"></span>
+        <span class="letter"></span>
+        <span class="letter"></span> -->
+      </div>
+    </div>
+    <div class="popup-container">
+      <div class="popup">
+        <h2 id="final-message">I am here</h2>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+    <div class="notification-container" id="notification-container">
+      <p>You already Entered This Letter</p>
+    </div>
+  </body>
+</html>
